@@ -11,6 +11,6 @@
 @interface ViewControllerHello : UIViewController
 
 @property (retain, nonatomic) IBOutlet UILabel *helloLabel;
-@property (retain, nonatomic) NSString  *stringHelloLabel;
+@property (retain, nonatomic) NSString  *stringHelloUser;
 
 @end

@@ -15,7 +15,7 @@
 @implementation ViewControllerHello
 
 @synthesize helloLabel = _helloLabel,
-            stringHelloLabel = _stringHelloLabel;
+            stringHelloUser = _stringHelloUser;
 
 - (void)setHelloLabel:(UILabel *)helloLabel{
     if (_helloLabel!=helloLabel){
@@ -29,14 +29,14 @@
 }
 
 - (void)setStringHelloLabel:(NSString *)stringHelloLabel{
-    if (_stringHelloLabel != stringHelloLabel){
-        [_stringHelloLabel release];
-        _stringHelloLabel = [stringHelloLabel retain];
+    if (_stringHelloUser != stringHelloLabel){
+        [_stringHelloUser release];
+        _stringHelloUser = [stringHelloLabel retain];
     }
 }
 
 -(NSString *)stringHelloLabel{
-    return _stringHelloLabel;
+    return _stringHelloUser;
 }
 
 - (void)viewDidLoad {
@@ -63,7 +63,7 @@
 
 - (void)dealloc {
     [_helloLabel release];
-    [_stringHelloLabel release];
+    [_stringHelloUser release];
     [super dealloc];
 }
 @end

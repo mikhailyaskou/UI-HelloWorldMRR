@@ -78,7 +78,7 @@
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     ViewControllerHello *targetViewController = [segue destinationViewController];
-    targetViewController.stringHelloLabel =  [NSString stringWithFormat:@"Hello %@ %@, how are you?", self.trimmedfirstName, self.trimmedlastName];
+    targetViewController.stringHelloUser =  [NSString stringWithFormat:@"Hello %@ %@, how are you?", self.trimmedfirstName, self.trimmedlastName];
 }
 
 - (void) changeButtonState{
